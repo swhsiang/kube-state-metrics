@@ -11,5 +11,7 @@ spec:
   - name: kube-state-metrics
     port: 8080
     protocol: TCP
+    nodePort: 30880
   selector:
     app: kube-state-metrics
+  type: 'NodePort'
